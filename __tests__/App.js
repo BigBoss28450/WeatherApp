@@ -1,10 +1,13 @@
-import 'react-native';
-import React from 'react';
-import App from '../App';
+import "react-native";
+import React from "react";
+import ReduxApp from "../ReduxApp";
 
 // Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+import renderer from "react-test-renderer";
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+jest.useFakeTimers();
+jest.mock("react-native/Libraries/Animated/src/NativeAnimatedHelper");
+
+it("renders correctly", () => {
+  renderer.create(<ReduxApp />);
 });
