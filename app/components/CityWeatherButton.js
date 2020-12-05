@@ -1,7 +1,7 @@
-import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import colors from "../config/colors";
-import { kelvinToCelsius } from "../config/helpers";
+import React from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import colors from '../config/colors';
+import { kelvinToCelsius } from '../config/helpers';
 
 export default function CityWeatherButton({ city, temp, onPress }) {
   return (
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     padding: 20,
     marginHorizontal: 20,
     marginBottom: 20,
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 });

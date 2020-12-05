@@ -1,8 +1,8 @@
-import React from "react";
-import { FlatList, View } from "react-native";
-import { useSelector } from "react-redux";
-import CityWeatherButton from "../components/CityWeatherButton";
-import Screen from "../components/Screen";
+import React from 'react';
+import { FlatList, View } from 'react-native';
+import { useSelector } from 'react-redux';
+import CityWeatherButton from '../components/CityWeatherButton';
+import Screen from '../components/Screen';
 
 export default function WelcomeScreen({ navigation }) {
   // variables
@@ -16,7 +16,7 @@ export default function WelcomeScreen({ navigation }) {
         }}
       >
         <FlatList
-          contentContainerStyle={{ flex: 1, justifyContent: "center" }}
+          contentContainerStyle={{ flex: 1, justifyContent: 'center' }}
           data={weatherList}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
@@ -24,7 +24,7 @@ export default function WelcomeScreen({ navigation }) {
               city={item.name}
               temp={item.main.temp}
               onPress={() =>
-                navigation.navigate("Details", { city: item.name })
+                navigation.navigate('Details', { city: item.name })
               }
             />
           )}

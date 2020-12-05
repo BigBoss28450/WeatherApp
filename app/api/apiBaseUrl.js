@@ -1,5 +1,5 @@
-import { create } from "apisauce";
-import constants from "../config/constants";
+import { create } from 'apisauce';
+import constants from '../config/constants';
 
 const apiBaseUrl = create({
   baseURL: constants.API_URL,

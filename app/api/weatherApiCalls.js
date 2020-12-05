@@ -1,4 +1,4 @@
-import apiBaseUrl from "../api/apiBaseUrl";
+import apiBaseUrl from '../api/apiBaseUrl';
 
 const getCityWeather = (cityName) =>
   apiBaseUrl

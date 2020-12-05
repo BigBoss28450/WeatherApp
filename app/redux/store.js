@@ -1,5 +1,5 @@
-import { createStore, combineReducers } from "redux";
-import weatherReducer from "./reducers/wetaherReducer";
+import { createStore, combineReducers } from 'redux';
+import weatherReducer from './reducers/wetaherReducer';
 
 const rootReducer = combineReducers({
   weather: weatherReducer,

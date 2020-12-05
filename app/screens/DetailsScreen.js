@@ -1,9 +1,9 @@
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { useSelector } from "react-redux";
-import DetailsListComponent from "../components/DetailsListComponent";
-import MainWeatherComponent from "../components/MainWeatherComponent";
-import Screen from "../components/Screen";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { useSelector } from 'react-redux';
+import DetailsListComponent from '../components/DetailsListComponent';
+import MainWeatherComponent from '../components/MainWeatherComponent';
+import Screen from '../components/Screen';
 
 export default function DetailsScreen({ route }) {
   // variables

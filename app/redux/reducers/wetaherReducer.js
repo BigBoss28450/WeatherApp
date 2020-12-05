@@ -1,7 +1,7 @@
 import {
   ADD_TO_WHEATER_LIST,
   REMOVE_FROM_WHEATER_LIST,
-} from "../actions/types";
+} from '../actions/types';
 
 const initialState = {
   weatherList: [],

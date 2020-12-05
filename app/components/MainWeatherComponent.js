@@ -1,7 +1,7 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import colors from "../config/colors";
-import { capitalize, kelvinToCelsius } from "../config/helpers";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import colors from '../config/colors';
+import { capitalize, kelvinToCelsius } from '../config/helpers';
 
 export default function MainWeatherComponent({
   city,
@@ -23,7 +23,7 @@ export default function MainWeatherComponent({
 }
 
 const styles = StyleSheet.create({
-  mainContainer: { flex: 1, justifyContent: "center", alignItems: "center" },
+  mainContainer: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   cityText: { fontSize: 30, color: colors.white },
   mainWeatherText: { fontSize: 60, color: colors.white },
   text: { color: colors.white },

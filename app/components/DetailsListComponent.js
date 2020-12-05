@@ -1,11 +1,11 @@
-import React from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
-import colors from "../config/colors";
+import React from 'react';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import colors from '../config/colors';
 import {
   kelvinToCelsius,
   metersToKilometers,
   timestampToHours,
-} from "../config/helpers";
+} from '../config/helpers';
 
 export default function DetailsListComponent({ data }) {
   return (
@@ -90,7 +90,7 @@ export default function DetailsListComponent({ data }) {
 
 const styles = StyleSheet.create({
   row: {
-    flexDirection: "row",
+    flexDirection: 'row',
     height: 60,
     borderTopWidth: 1,
     borderTopColor: colors.white,
@@ -98,6 +98,6 @@ const styles = StyleSheet.create({
   },
   cell: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
   },
 });
