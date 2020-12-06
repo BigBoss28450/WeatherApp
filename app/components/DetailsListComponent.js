@@ -1,11 +1,26 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import PropTypes from 'prop-types';
 import colors from '../config/colors';
 import {
   kelvinToCelsius,
   metersToKilometers,
   timestampToHours,
 } from '../config/helpers';
+
+const styles = StyleSheet.create({
+  row: {
+    flexDirection: 'row',
+    height: 60,
+    borderTopWidth: 1,
+    borderTopColor: colors.white,
+    paddingHorizontal: 10,
+  },
+  cell: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+});
 
 export default function DetailsListComponent({ data }) {
   return (
@@ -35,7 +50,7 @@ export default function DetailsListComponent({ data }) {
               Humedad
             </Text>
             <Text style={{ color: colors.white, fontSize: 30 }}>
-              {data.main.humidity}%
+              {`${data.main.humidity}%`}
             </Text>
           </View>
           <View style={styles.cell}>
@@ -43,7 +58,7 @@ export default function DetailsListComponent({ data }) {
               Presión
             </Text>
             <Text style={{ color: colors.white, fontSize: 30 }}>
-              {data.main.pressure} hPa
+              {`${data.main.pressure} hPa`}
             </Text>
           </View>
         </View>
@@ -53,7 +68,7 @@ export default function DetailsListComponent({ data }) {
               Temperatura máxima
             </Text>
             <Text style={{ color: colors.white, fontSize: 30 }}>
-              {kelvinToCelsius(data.main.temp_max)}º
+              {`${kelvinToCelsius(data.main.temp_max)}º`}
             </Text>
           </View>
           <View style={styles.cell}>
@@ -61,7 +76,7 @@ export default function DetailsListComponent({ data }) {
               Temperatura minima
             </Text>
             <Text style={{ color: colors.white, fontSize: 30 }}>
-              {kelvinToCelsius(data.main.temp_min)}º
+              {`${kelvinToCelsius(data.main.temp_min)}º`}
             </Text>
           </View>
         </View>
@@ -71,7 +86,7 @@ export default function DetailsListComponent({ data }) {
               Visibilidad
             </Text>
             <Text style={{ color: colors.white, fontSize: 30 }}>
-              {metersToKilometers(data.visibility)} km
+              {`${metersToKilometers(data.visibility)} km`}
             </Text>
           </View>
           <View style={styles.cell}>
@@ -79,7 +94,7 @@ export default function DetailsListComponent({ data }) {
               Velocidad del viento
             </Text>
             <Text style={{ color: colors.white, fontSize: 30 }}>
-              {data.wind.speed} km
+              {`${data.wind.speed} km`}
             </Text>
           </View>
         </View>
@@ -88,16 +103,21 @@ export default function DetailsListComponent({ data }) {
   );
 }
 
-const styles = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    height: 60,
-    borderTopWidth: 1,
-    borderTopColor: colors.white,
-    paddingHorizontal: 10,
-  },
-  cell: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-});
+DetailsListComponent.propTypes = {
+  data: PropTypes.shape({
+    visibility: PropTypes.number.isRequired,
+    sys: PropTypes.shape({
+      sunrise: PropTypes.string.isRequired,
+      sunset: PropTypes.string.isRequired,
+    }),
+    main: PropTypes.shape({
+      humidity: PropTypes.number.isRequired,
+      pressure: PropTypes.number.isRequired,
+      temp_max: PropTypes.number.isRequired,
+      temp_min: PropTypes.number.isRequired,
+    }),
+    wind: PropTypes.shape({
+      speed: PropTypes.number.isRequired,
+    }),
+  }).isRequired,
+};

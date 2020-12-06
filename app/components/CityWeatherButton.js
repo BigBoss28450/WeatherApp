@@ -1,18 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
 import colors from '../config/colors';
 import { kelvinToCelsius } from '../config/helpers';
-
-export default function CityWeatherButton({ city, temp, onPress }) {
-  return (
-    <TouchableOpacity onPress={onPress}>
-      <View style={styles.weatherButtonContainer}>
-        <Text style={{ color: colors.white }}>{city}</Text>
-        <Text style={{ color: colors.white }}>{kelvinToCelsius(temp)} Cº</Text>
-      </View>
-    </TouchableOpacity>
-  );
-}
 
 const styles = StyleSheet.create({
   weatherButtonContainer: {
@@ -22,7 +12,30 @@ const styles = StyleSheet.create({
     padding: 20,
     marginHorizontal: 20,
     marginBottom: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
+
+export default function CityWeatherButton({ city, temp, onPress }) {
+  return (
+    <TouchableOpacity onPress={onPress} style={{ flex: 1 }}>
+      <View style={styles.weatherButtonContainer}>
+        <Text style={{ fontSize: 20, color: colors.white }}>{city}</Text>
+        <Text style={{ fontSize: 35, color: colors.white }}>
+          {`${kelvinToCelsius(temp)} Cº`}
+        </Text>
+      </View>
+    </TouchableOpacity>
+  );
+}
+
+CityWeatherButton.propTypes = {
+  city: PropTypes.string.isRequired,
+  temp: PropTypes.number.isRequired,
+  onPress: PropTypes.func,
+};
+
+CityWeatherButton.defaultProps = {
+  onPress: () => {},
+};

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import CityWeatherButton from '../components/CityWeatherButton';
 import Screen from '../components/Screen';
 
@@ -10,21 +11,21 @@ export default function WelcomeScreen({ navigation }) {
 
   return (
     <Screen>
-      <View
-        style={{
-          flex: 1,
-        }}
-      >
+      <View style={{ flex: 1 }}>
         <FlatList
-          contentContainerStyle={{ flex: 1, justifyContent: 'center' }}
+          contentContainerStyle={{
+            flex: 1,
+            justifyContent: 'center',
+          }}
+          numColumns={2}
           data={weatherList}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <CityWeatherButton
               city={item.name}
               temp={item.main.temp}
-              onPress={() =>
-                navigation.navigate('Details', { city: item.name })
+              onPress={
+                () => navigation.navigate('Details', { city: item.name })
               }
             />
           )}
@@ -33,3 +34,9 @@ export default function WelcomeScreen({ navigation }) {
     </Screen>
   );
 }
+
+WelcomeScreen.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired,
+  }).isRequired,
+};

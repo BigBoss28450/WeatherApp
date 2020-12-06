@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
 import { useSelector } from 'react-redux';
+import { View } from 'react-native';
+import PropTypes from 'prop-types';
 import DetailsListComponent from '../components/DetailsListComponent';
 import MainWeatherComponent from '../components/MainWeatherComponent';
 import Screen from '../components/Screen';
@@ -11,6 +12,7 @@ export default function DetailsScreen({ route }) {
   const weatherList = useSelector((state) => state.weather.weatherList);
   const weatherDetails = weatherList.filter((item) => {
     if (item.name === cityName) return item;
+    return null;
   })[0];
 
   return (
@@ -29,4 +31,8 @@ export default function DetailsScreen({ route }) {
   );
 }
 
-const styles = StyleSheet.create({});
+DetailsScreen.propTypes = {
+  route: PropTypes.shape({
+    params: PropTypes.shape.isRequired,
+  }).isRequired,
+};
