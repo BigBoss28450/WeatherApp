@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import DetailsScreen from '../screens/DetailsScreen';
 import colors from '../config/colors';
+import HeaderButton from '../components/headerComponents/HeaderButton';
 
 const Stack = createStackNavigator();
 
@@ -12,7 +13,11 @@ export default function MainNavigator() {
       <Stack.Screen
         name="Main"
         component={WelcomeScreen}
-        options={{ headerTransparent: true, title: false }}
+        options={{
+          headerTransparent: true,
+          title: false,
+          headerRight: () => <HeaderButton />,
+        }}
       />
       <Stack.Screen
         name="Details"
