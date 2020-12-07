@@ -10,9 +10,14 @@ you just need to clone this repo and execute this line
 npm install
 ```
 
+also you will need the Open Weather API.
+You can get one [here.](https://openweathermap.org/)
+
+To let your ApiKey working you'll need to create a file called ENV.js this file need to be placed inside config folder inside the app folder this folder is located in the root of our project.
+
 ## Testing
 
-for test this app used jest so you just need to execute
+for test this app i used jest. So you just need to execute
 
 ```bash
 npm test
