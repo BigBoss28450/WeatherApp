@@ -1,53 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Welcome Screen renders correctly 1`] = `
-Array [
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
   <View
-    accessibilityIgnoresInvertColors={true}
     style={
       Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.3)",
         "flex": 1,
       }
     }
   >
-    <Image
-      source={
-        Object {
-          "testUri": "../../../app/assets/sunshine.jpg",
-        }
-      }
-      style={
-        Array [
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-          Object {
-            "height": undefined,
-            "width": undefined,
-          },
-          undefined,
-        ]
-      }
-    />
-    <View
+    <RNCSafeAreaView
       style={
         Object {
-          "backgroundColor": "rgba(0, 0, 0, 0.3)",
           "flex": 1,
         }
       }
     >
-      <RNCSafeAreaView
+      <View
         style={
           Object {
             "flex": 1,
           }
         }
       >
+        <View
+          style={
+            Object {
+              "alignSelf": "flex-end",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "maxHeight": 60,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <Text />
+            </View>
+          </View>
+        </View>
         <View
           style={
             Object {
@@ -58,8 +101,9 @@ Array [
           <RCTScrollView
             contentContainerStyle={
               Object {
-                "flex": 1,
+                "flexGrow": 1,
                 "justifyContent": "center",
+                "paddingVertical": 20,
               }
             }
             data={Array []}
@@ -88,9 +132,112 @@ Array [
             <View />
           </RCTScrollView>
         </View>
-      </RNCSafeAreaView>
-    </View>
-  </View>,
-  ")",
-]
+      </View>
+      <Modal
+        animationType="slide"
+        hardwareAccelerated={false}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#000000",
+                "flex": 1,
+                "maxHeight": 800,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "maxHeight": 60,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "paddingLeft": 20,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 20,
+                      "flex": 1,
+                      "justifyContent": "center",
+                      "paddingHorizontal": 20,
+                    }
+                  }
+                >
+                  <TextInput
+                    allowFontScaling={true}
+                    onChangeText={[Function]}
+                    onSubmitEditing={[Function]}
+                    placeholder="Aa"
+                    rejectResponderTermination={true}
+                    returnKeyLabel="Buscar"
+                    returnKeyType="search"
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+              </View>
+              <View
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "height": "100%",
+                      "justifyContent": "center",
+                      "width": 50,
+                    }
+                  }
+                >
+                  <Text />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </RNCSafeAreaView>
+  </View>
+</View>
 `;

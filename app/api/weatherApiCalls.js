@@ -1,10 +1,9 @@
+import constants from '../config/constants';
 import apiBaseUrl from './apiBaseUrl';
 
 const getCityWeather = (cityName) =>
   apiBaseUrl
-    .get(
-      `/data/2.5/weather?q=${cityName}&appid=5e22cdf392ec083c2aceed6fecc09977&lang=es`
-    )
+    .get(`/data/2.5/weather?q=${cityName}&appid=${constants.API_KEY}&lang=es`)
     .then((response) => response.data);
 
 export default {

@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { StyleSheet, View, TouchableOpacity } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import PropTypes from 'prop-types';
 import colors from '../../config/colors';
 
 const styles = StyleSheet.create({
   headerButton: {
+    // flex: 1,
     width: 50,
     height: '100%',
     alignItems: 'center',
@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function HeaderButton({ onPress }) {
+export default function HeaderButton({ onPress, icon }) {
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={styles.headerButton}>
-        <MaterialCommunityIcons name="magnify" size={25} color={colors.white} />
+        <MaterialCommunityIcons name={icon} size={25} color={colors.white} />
       </View>
     </TouchableOpacity>
   );
@@ -26,6 +26,7 @@ export default function HeaderButton({ onPress }) {
 
 HeaderButton.propTypes = {
   onPress: PropTypes.func,
+  icon: PropTypes.string.isRequired,
 };
 
 HeaderButton.defaultProps = {

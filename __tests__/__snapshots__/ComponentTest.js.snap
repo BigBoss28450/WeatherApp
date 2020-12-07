@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link changes the class when hovered 1`] = `
+exports[`CityWeatherCompnent works perfect 1`] = `
 <View
   accessible={true}
   focusable={true}
@@ -13,6 +13,7 @@ exports[`Link changes the class when hovered 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "flex": 1,
       "opacity": 1,
     }
   }
@@ -20,11 +21,11 @@ exports[`Link changes the class when hovered 1`] = `
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderColor": "#FFFFFF",
         "borderRadius": 5,
         "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "space-between",
+        "justifyContent": "center",
         "marginBottom": 20,
         "marginHorizontal": 20,
         "padding": 20,
@@ -32,9 +33,11 @@ exports[`Link changes the class when hovered 1`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         Object {
           "color": "#FFFFFF",
+          "fontSize": 20,
         }
       }
     >
@@ -44,17 +47,17 @@ exports[`Link changes the class when hovered 1`] = `
       style={
         Object {
           "color": "#FFFFFF",
+          "fontSize": 35,
         }
       }
     >
-      -248
-       Cº
+      -248 Cº
     </Text>
   </View>
 </View>
 `;
 
-exports[`Link changes the class when hovered 2`] = `
+exports[`CityWeatherCompnent works perfect 2`] = `
 <View
   accessible={true}
   focusable={true}
@@ -67,6 +70,7 @@ exports[`Link changes the class when hovered 2`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "flex": 1,
       "opacity": 1,
     }
   }
@@ -74,11 +78,11 @@ exports[`Link changes the class when hovered 2`] = `
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderColor": "#FFFFFF",
         "borderRadius": 5,
         "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "space-between",
+        "justifyContent": "center",
         "marginBottom": 20,
         "marginHorizontal": 20,
         "padding": 20,
@@ -86,9 +90,11 @@ exports[`Link changes the class when hovered 2`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         Object {
           "color": "#FFFFFF",
+          "fontSize": 20,
         }
       }
     >
@@ -98,17 +104,17 @@ exports[`Link changes the class when hovered 2`] = `
       style={
         Object {
           "color": "#FFFFFF",
+          "fontSize": 35,
         }
       }
     >
-      -248
-       Cº
+      -248 Cº
     </Text>
   </View>
 </View>
 `;
 
-exports[`Link changes the class when hovered 3`] = `
+exports[`CityWeatherCompnent works perfect 3`] = `
 <View
   accessible={true}
   focusable={true}
@@ -121,6 +127,7 @@ exports[`Link changes the class when hovered 3`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "flex": 1,
       "opacity": 1,
     }
   }
@@ -128,11 +135,11 @@ exports[`Link changes the class when hovered 3`] = `
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderColor": "#FFFFFF",
         "borderRadius": 5,
         "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "space-between",
+        "justifyContent": "center",
         "marginBottom": 20,
         "marginHorizontal": 20,
         "padding": 20,
@@ -140,9 +147,11 @@ exports[`Link changes the class when hovered 3`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         Object {
           "color": "#FFFFFF",
+          "fontSize": 20,
         }
       }
     >
@@ -152,12 +161,1192 @@ exports[`Link changes the class when hovered 3`] = `
       style={
         Object {
           "color": "#FFFFFF",
+          "fontSize": 35,
         }
       }
     >
-      -248
-       Cº
+      -248 Cº
     </Text>
   </View>
+</View>
+`;
+
+exports[`DetilsListComponent renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Amanecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1:40
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Atardecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10:47
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Humedad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            81%
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Presión
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1012 hPa
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura máxima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            8º
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura minima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            6º
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Visibilidad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10 km
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Velocidad del viento
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            4.1 km
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`DetilsListComponent renders correctly 2`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Amanecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1:40
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Atardecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10:47
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Humedad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            81%
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Presión
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1012 hPa
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura máxima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            8º
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura minima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            6º
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Visibilidad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10 km
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Velocidad del viento
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            4.1 km
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`DetilsListComponent renders correctly 3`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Amanecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1:40
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Atardecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10:47
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Humedad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            81%
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Presión
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1012 hPa
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura máxima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            8º
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura minima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            6º
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Visibilidad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10 km
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Velocidad del viento
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            4.1 km
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`DetilsListComponent renders correctly 4`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Amanecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1:40
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Atardecer
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10:47
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Humedad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            81%
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Presión
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            1012 hPa
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura máxima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            8º
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Temperatura minima
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            6º
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#FFFFFF",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 60,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Visibilidad
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            10 km
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#e6e6e6",
+                "marginBottom": -5,
+              }
+            }
+          >
+            Velocidad del viento
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 30,
+              }
+            }
+          >
+            4.1 km
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
 </View>
 `;

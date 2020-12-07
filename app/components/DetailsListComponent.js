@@ -107,8 +107,8 @@ DetailsListComponent.propTypes = {
   data: PropTypes.shape({
     visibility: PropTypes.number.isRequired,
     sys: PropTypes.shape({
-      sunrise: PropTypes.string.isRequired,
-      sunset: PropTypes.string.isRequired,
+      sunrise: PropTypes.number.isRequired,
+      sunset: PropTypes.number.isRequired,
     }),
     main: PropTypes.shape({
       humidity: PropTypes.number.isRequired,

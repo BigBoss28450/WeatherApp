@@ -18,14 +18,18 @@ export default function DetailsScreen({ route }) {
   return (
     <Screen>
       <View style={{ flex: 1 }}>
-        <MainWeatherComponent
-          city={weatherDetails.name}
-          description={weatherDetails.weather[0].description}
-          temp={weatherDetails.main.temp}
-          max={weatherDetails.main.temp_max}
-          min={weatherDetails.main.temp_min}
-        />
-        <DetailsListComponent data={weatherDetails} />
+        {weatherDetails && (
+          <>
+            <MainWeatherComponent
+              city={weatherDetails.name}
+              description={weatherDetails.weather[0].description}
+              temp={weatherDetails.main.temp}
+              max={weatherDetails.main.temp_max}
+              min={weatherDetails.main.temp_min}
+            />
+            <DetailsListComponent data={weatherDetails} />
+          </>
+        )}
       </View>
     </Screen>
   );

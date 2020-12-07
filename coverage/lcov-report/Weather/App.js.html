@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.89% </span>
+                <span class="strong">92.31% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/9</span>
+                <span class='fraction'>12/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.89% </span>
+                <span class="strong">90.91% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/9</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
@@ -90,7 +90,8 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -102,20 +103,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,33 +125,34 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useEffect } from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import MainNavigator from "./app/navigation/MainNavigator";
-import { getWeather } from "./app/redux/actions/weather";
-import weatherApiCalls from "./app/api/weatherApiCalls";
-import constants from "./app/config/constants";
-import { useDispatch } from "react-redux";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
+import MainNavigator from './app/navigation/MainNavigator';
+import { getWeather } from './app/redux/actions/weather';
+import weatherApiCalls from './app/api/weatherApiCalls';
 &nbsp;
 // backgrund image courtesy of:
 // &lt;a href='https://www.freepik.es/fotos/fondo'&gt;Foto de Fondo creado por tirachard - www.freepik.es&lt;/a&gt;
 &nbsp;
 export default function App() {
   // variables
-  const cityList = constants.CITY_LIST;
+  const cityList = useSelector((state) =&gt; state.weather.cityList);
+  const alreadyDownloaded = useSelector(
+    (state) =&gt; state.weather.alreadyDownloaded
+  );
   const dispatch = useDispatch();
 &nbsp;
-  // functions
-  const getCityWeather = async () =&gt; {
-    cityList.map(async (city) =&gt; {
-      const result = await weatherApiCalls.getCityWeather(city);
-<span class="cstat-no" title="statement not covered" >      dispatch(getWeather(result));</span>
-    });
-  };
-&nbsp;
   useEffect(() =&gt; {
-    getCityWeather();
-  }, []);
+    const getCityWeather = async () =&gt; {
+      cityList.map(async (city) =&gt; {
+        const result = await weatherApiCalls.getCityWeather(city);
+<span class="cstat-no" title="statement not covered" >        dispatch(getWeather(result));</span>
+      });
+    };
+&nbsp;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!alreadyDownloaded) getCityWeather();
+  }, [alreadyDownloaded, cityList, dispatch]);
   return (
     &lt;NavigationContainer&gt;
       &lt;MainNavigator /&gt;
@@ -163,7 +166,7 @@ export default function App() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Dec 05 2020 02:16:39 GMT-0600 (GMT-06:00)
+                at Sun Dec 06 2020 19:21:16 GMT-0600 (GMT-06:00)
             </div>
         </div>
         <script src="../prettify.js"></script>

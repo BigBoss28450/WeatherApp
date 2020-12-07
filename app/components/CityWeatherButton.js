@@ -21,7 +21,9 @@ export default function CityWeatherButton({ city, temp, onPress }) {
   return (
     <TouchableOpacity onPress={onPress} style={{ flex: 1 }}>
       <View style={styles.weatherButtonContainer}>
-        <Text style={{ fontSize: 20, color: colors.white }}>{city}</Text>
+        <Text style={{ fontSize: 20, color: colors.white }} numberOfLines={1}>
+          {city}
+        </Text>
         <Text style={{ fontSize: 35, color: colors.white }}>
           {`${kelvinToCelsius(temp)} Cº`}
         </Text>

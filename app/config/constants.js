@@ -1,7 +1,6 @@
-import WEATHER_API_KEY from './ENV';
-
+import ENV from './ENV';
 const API_URL = 'https://api.openweathermap.org/';
-const API_KEY = WEATHER_API_KEY;
+const API_KEY = ENV.WEATHER_API_KEY;
 const CITY_LIST = [
   'Colima',
   'Guadalajara',
