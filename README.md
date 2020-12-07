@@ -15,7 +15,13 @@ Also, you will need a key to use the Open Weather API.
 
 You can get one [here.](https://openweathermap.org/)
 
-To let your ApiKey working you'll need to create a file called ENV.js, this file need to be right in the root of our project.
+To let your ApiKey working you'll need to create a file called ENV.js, And write this line of code inside of it:
+
+```bash
+export default { WEATHER_API_KEY: <YOUR APY KEY HERE> };
+```
+
+Last, you just need to put this right in the root of your project.
 
 ## Usage
 
