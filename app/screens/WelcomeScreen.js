@@ -125,5 +125,9 @@ export default function WelcomeScreen({ navigation }) {
 WelcomeScreen.propTypes = {
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired,
-  }).isRequired,
+  }),
+};
+
+WelcomeScreen.defaultProps = {
+  navigation: { navigate: () => {} },
 };

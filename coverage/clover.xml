@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1607304076541" clover="3.2.0">
-  <project timestamp="1607304076541" name="All files">
-    <metrics statements="127" coveredstatements="84" conditionals="20" coveredconditionals="7" methods="52" coveredmethods="26" elements="199" coveredelements="117" complexity="0" loc="127" ncloc="127" packages="12" files="25" classes="25"/>
+<coverage generated="1607364069778" clover="3.2.0">
+  <project timestamp="1607364069779" name="All files">
+    <metrics statements="128" coveredstatements="87" conditionals="20" coveredconditionals="8" methods="53" coveredmethods="28" elements="201" coveredelements="123" complexity="0" loc="128" ncloc="128" packages="12" files="25" classes="25"/>
     <package name="Weather">
       <metrics statements="13" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="7"/>
       <file name="App.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/App.js">
@@ -17,6 +17,9 @@
         <line num="23" count="0" type="stmt"/>
         <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="29" count="1" type="stmt"/>
+      </file>
+      <file name="ENV.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/ENV.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="ReduxApp.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/ReduxApp.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -115,9 +118,6 @@
     </package>
     <package name="Weather.app.config">
       <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
-      <file name="ENV.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/config/ENV.js">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
       <file name="colors.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/config/colors.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
@@ -165,33 +165,33 @@
       </file>
     </package>
     <package name="Weather.app.redux.actions">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="types.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/redux/actions/types.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
       </file>
       <file name="weather.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/redux/actions/weather.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
       </file>
     </package>
     <package name="Weather.app.redux.reducers">
-      <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <file name="wetaherReducer.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/redux/reducers/wetaherReducer.js">
-        <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="7" count="3" type="stmt"/>
         <line num="13" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="7" type="cond" truecount="2" falsecount="1"/>
+        <line num="14" count="8" type="cond" truecount="3" falsecount="0"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
         <line num="31" count="6" type="stmt"/>
       </file>
     </package>
     <package name="Weather.app.screens">
-      <metrics statements="41" coveredstatements="10" conditionals="12" coveredconditionals="2" methods="14" coveredmethods="2"/>
+      <metrics statements="42" coveredstatements="11" conditionals="12" coveredconditionals="2" methods="15" coveredmethods="2"/>
       <file name="DetailsScreen.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/screens/DetailsScreen.js">
         <metrics statements="7" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="11" count="0" type="stmt"/>
@@ -203,7 +203,7 @@
         <line num="38" count="1" type="stmt"/>
       </file>
       <file name="WelcomeScreen.js" path="/Users/manuel/Documents/Alexis/Personal/Proyectos/Weather/app/screens/WelcomeScreen.js">
-        <metrics statements="34" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="11" coveredmethods="2"/>
+        <metrics statements="35" coveredstatements="10" conditionals="8" coveredconditionals="2" methods="12" coveredmethods="2"/>
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
@@ -230,14 +230,15 @@
         <line num="57" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="88" count="0" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
         <line num="91" count="0" type="stmt"/>
-        <line num="100" count="0" type="stmt"/>
-        <line num="123" count="2" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="125" count="2" type="stmt"/>
+        <line num="131" count="2" type="stmt"/>
       </file>
     </package>
   </project>

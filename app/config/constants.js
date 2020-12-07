@@ -1,4 +1,4 @@
-import ENV from './ENV';
+import ENV from '../../ENV';
 const API_URL = 'https://api.openweathermap.org/';
 const API_KEY = ENV.WEATHER_API_KEY;
 const CITY_LIST = [

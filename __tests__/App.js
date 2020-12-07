@@ -5,6 +5,6 @@ import ReduxApp from '../ReduxApp';
 
 jest.useFakeTimers();
 
-it('renders correctly', () => {
+test('renders correctly', () => {
   renderer.create(<ReduxApp />);
 });
